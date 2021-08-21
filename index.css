@@ -238,7 +238,7 @@ padding-bottom:3px*/
    }
    }
   
-   @media screen and (max-width: 505px) { 
+   @media screen and (max-width:530px) { 
     .partnery__card {
       width: 100%;
       margin-right: 0;
