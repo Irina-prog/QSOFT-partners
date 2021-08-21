@@ -70,7 +70,12 @@ padding-bottom:3px*/
   background-position-x: 14px;
   padding-left: 39px;
   font-size: 14px;
-  line-height: 16,41px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+   }
+.header__search::::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BBC4D6;
   
 }
 
@@ -87,6 +92,8 @@ padding-bottom:3px*/
     margin: 0 10px 0 19px;
     font-size: 14px;
     line-height: 16.8px;
+    color: #768298;
+    ;
 }
 .header__user-icon {
     width: 40px;
@@ -95,7 +102,7 @@ padding-bottom:3px*/
    
   
   .main {
-    padding: 0 calc((100% - 1168px)/2);
+    padding: 0 calc((100% - 1170px)/2);
   }
   .partnery {
     display: flex;
@@ -103,7 +110,7 @@ padding-bottom:3px*/
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0px;
-    max-width: 1168px;
+    max-width: 1170px;
   }
   .partnery__title {
     font-family: Roboto;
@@ -142,7 +149,7 @@ padding-bottom:3px*/
 
   @media screen and (max-width:1500px)  {
     .main {
-      padding: 0 calc((100% - 1168px)/2);
+      padding: 0 calc((100% - 1170px)/2);
     }
   }
   
@@ -151,7 +158,7 @@ padding-bottom:3px*/
   @media screen and (max-width: 1700px) { 
    .partnery__card {
     width: calc((100% - 60px)/4);
-    margin: 0 20px 20px 0;
+    margin: 0 clamp(20px,calc(20px+0.01488*(100vw-768px)),30px) clamp(20px,calc(20px+0.01488*(100vw-768px)),30px) 0;
       }
 
   }
@@ -175,7 +182,7 @@ padding-bottom:3px*/
    @media screen and (max-width: 1031px) { 
     .partnery__card {
       min-width: 229px;
-      width: calc((100% - 60px)/3);
+      width: calc((100% - 40px)/3);
     }
     .partnery__card:nth-child(4) {
        margin-right: 20px;
