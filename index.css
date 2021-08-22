@@ -88,9 +88,11 @@ padding-bottom:3px*/
 }
 
 .main {
-  padding: 0 calc((100% - 1170px) / 2);
+  padding: 20px calc((100% - 1170px) / 2) 0;
+  
 }
 .partnery {
+  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -100,16 +102,12 @@ padding-bottom:3px*/
 }
 .partnery__title {
   font-family: Roboto;
-  margin: 50px 0 30px;
+  margin: 30px 0 30px;
 }
 .partnery__card {
   display: flex;
   justify-content: center;
-  width: 333px;
-
-  height: 138px;
   border: 1px solid #ebebf1;
-
   margin: 0 30px 30px 0;
   cursor: pointer;
   border-radius: 5px;
@@ -136,7 +134,7 @@ padding-bottom:3px*/
 
 @media screen and (max-width: 1500px) {
   .main {
-    padding: 0 calc((100% - 1170px) / 2);
+    padding: 20px calc((100% - 1170px) / 2) 0;
   }
 }
 
@@ -149,7 +147,7 @@ padding-bottom:3px*/
 }
 @media screen and (max-width: 1210px) {
   .main {
-    padding: 0 20px;
+    padding: 20px 20px 0;
   }
   .header {
     padding: 0;
@@ -226,12 +224,14 @@ padding-bottom:3px*/
   .header__user {
     border-left: none;
   }
+  
 }
 
 @media screen and (max-width: 530px) {
   .partnery__card {
     width: 100%;
     margin-right: 0;
+    height: 140px;
   }
   .partnery__card:nth-child(3n) {
     margin-right: 0;
